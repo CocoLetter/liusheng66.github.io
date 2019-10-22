@@ -12,21 +12,12 @@
     
     
     <item>
-      <title>用hugo和github部署博客|详细版</title>
+      <title>使用用hugo和github搭建个人博客|详解</title>
       <link>https://liusheng996.github.io/post/newhugo/</link>
       <pubDate>Tue, 22 Oct 2019 12:48:24 +0800</pubDate>
       
       <guid>https://liusheng996.github.io/post/newhugo/</guid>
-      <description>下载安装hugo 系统环境路径的配置 下载安装git 系统环境路径的配置</description>
-    </item>
-    
-    <item>
-      <title>Hugo 搭建个人博客|精讲</title>
-      <link>https://liusheng996.github.io/post/hugo/</link>
-      <pubDate>Mon, 21 Oct 2019 12:57:21 +0800</pubDate>
-      
-      <guid>https://liusheng996.github.io/post/hugo/</guid>
-      <description>hugu的下载与安装</description>
+      <description>折腾了挺久才成功搭建好了自己的第一个博客，博客的第一篇文章就分享一下博客搭建的具体方法，以及自己踩过的坑坑坑&amp;hellip; 搭建好的博客ht</description>
     </item>
     
   </channel>

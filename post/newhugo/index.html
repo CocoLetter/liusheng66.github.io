@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="用hugo和github部署博客|详细版" />
-    <meta property="og:title" content="用hugo和github部署博客|详细版" />
-    <meta property="twitter:title" content="用hugo和github部署博客|详细版" />
+    <meta name="title" content="使用用hugo和github搭建个人博客|详解" />
+    <meta property="og:title" content="使用用hugo和github搭建个人博客|详解" />
+    <meta property="twitter:title" content="使用用hugo和github搭建个人博客|详解" />
     
 
     
@@ -34,7 +34,7 @@
     <meta name="keyword"  content="CodeBaker, LiuSheng,  , 刘晟的网络日志, CodeBaker Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/head.png">
 
-    <title>用hugo和github部署博客|详细版-CodeBaker Blog</title>
+    <title>使用用hugo和github搭建个人博客|详解-CodeBaker Blog</title>
 
     <link rel="canonical" href="/post/newhugo/">
 
@@ -184,7 +184,7 @@
                         </a>
                         
                     </div>
-                    <h1>用hugo和github部署博客|详细版</h1>
+                    <h1>使用用hugo和github搭建个人博客|详解</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -222,26 +222,188 @@
                 </header>
                 <nav id="TableOfContents">
 <ul>
-<li><a href="#下载安装hugo">下载安装hugo</a>
+<li><a href="#下载安装">下载安装</a>
 <ul>
-<li><a href="#系统环境路径的配置">系统环境路径的配置</a></li>
+<li><a href="#hugo的下载安装">hugo的下载安装</a></li>
+<li><a href="#git下载安装">git下载安装</a></li>
 </ul></li>
-<li><a href="#下载安装git">下载安装git</a>
+<li><a href="#使用hugo创建第一个博客">使用hugo创建第一个博客</a></li>
+<li><a href="#为博客文件下载主题">为博客文件下载主题</a></li>
+<li><a href="#写一篇博客">写一篇博客</a></li>
+<li><a href="#启动博客">启动博客</a></li>
+<li><a href="#博客发布-通过github">博客发布&ndash;通过github</a>
 <ul>
-<li><a href="#系统环境路径的配置-1">系统环境路径的配置</a></li>
+<li><a href="#申请respository">申请respository</a></li>
+<li><a href="#为本地博客绑定链接">为本地博客绑定链接</a></li>
+<li><a href="#public文件传到本地git仓库中">public文件传到本地git仓库中</a></li>
+<li><a href="#要把本地git库和远程github进行关联">要把本地git库和远程github进行关联</a></li>
+<li><a href="#将文件push到github库中">将文件push到github库中</a></li>
+<li><a href="#完成">完成</a></li>
 </ul></li>
+<li><a href="#个人总结">个人总结：</a></li>
 </ul>
 </nav>
                 
                 
 
-<h1 id="下载安装hugo">下载安装hugo</h1>
+<hr />
 
-<h2 id="系统环境路径的配置">系统环境路径的配置</h2>
+<p>折腾了挺久才成功搭建好了自己的第一个博客，博客的第一篇文章就分享一下博客搭建的具体方法，以及自己踩过的坑坑坑&hellip;  搭建好的博客<a href="https://liusheng996.github.io">https://liusheng996.github.io</a>供大家参考</p>
 
-<h1 id="下载安装git">下载安装git</h1>
+<h1 id="下载安装">下载安装</h1>
 
-<h2 id="系统环境路径的配置-1">系统环境路径的配置</h2>
+<hr />
+
+<p>Hugo是一个用Go编写的静态站点生成器，由于具有丰富的主题资源和惊人的生成速度而备受青睐。
+hugo操作简单，是博客搭建的新手的首选。</p>
+
+<h2 id="hugo的下载安装">hugo的下载安装</h2>
+
+<ul>
+<li>mac安装只需要在命令行中输入
+    <code>brew install hugo</code>
+    再通过<code>hugo version</code>确认是否安装成功</li>
+
+<li><p>windows的下载安装稍微麻烦</p>
+
+<ul>
+<li>在<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>地址下载所需的安装文件包</li>
+</ul>
+
+<p>根据个人电脑选择对应安装包
+  <img src="/static/img/picture/Snipaste_2019-10-22_14-39-12.png" alt="" />
+* 系统环境路径的配置
+    右键的电脑属性 &ndash;&gt; 点击高级系统设置 &ndash;&gt; 环境变量 &ndash;&gt; 选择系统变量Path &ndash;&gt; 编辑 &ndash;&gt; 新建 &ndash;&gt; 将hugo所在的目录添加到新的环境变量<br />
+    环境变量添加完成后在系统命令行中即可运行hugo指令
+    <img src="/static/img/picture/Snipaste_2019-10-22_15-05-12.png" alt="" /></p></li>
+</ul>
+
+<h2 id="git下载安装">git下载安装</h2>
+
+<p>git的下载地址为<a href="https://git-scm.com">https://git-scm.com</a>安装过程非常简单<br />
+系统环境路径的配置也和hugo配置相同</p>
+
+<h1 id="使用hugo创建第一个博客">使用hugo创建第一个博客</h1>
+
+<p>在系统命令行中输入hugo new site <strong>test</strong>&ndash;自拟博客文件名称  博客创建成功输入dir查看test博客文件目录</p>
+
+<pre><code>C:\Users\administrator&gt;hugo new site test
+Congratulations! Your new Hugo site is created in C:\Users\administrator\test.
+
+Just a few more steps and you're ready to go:
+
+1. Download a theme into the same-named folder.
+   Choose a theme from https://themes.gohugo.io/ or
+   create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command.
+2. Perhaps you want to add some content. You can add single files
+   with &quot;hugo new &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&quot;.
+3. Start the built-in live server via &quot;hugo server&quot;.
+
+Visit https://gohugo.io/ for quickstart guide and full documentation.
+</code></pre>
+
+<h1 id="为博客文件下载主题">为博客文件下载主题</h1>
+
+<p>此时创建的博客为空文件夹，还需要为博客下载主题
+<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>为hugo主题网站选择想要的主题，并前往github下载主题，github上readme.md文件中会如下所示的下载路径复制</p>
+
+<pre><code>git clone https://github.com/zhaohuabing/
+</code></pre>
+
+<p>到命令行即可下载主题，注意先将当前目录调整到themes文件。此时themes文件中就有下载好的主题文件夹</p>
+
+<pre><code>C:\Users\administrator\test\themes&gt;git clone https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
+Cloning into 'hugo-theme-cleanwhite'...
+remote: Enumerating objects: 53, done.
+remote: Counting objects: 100% (53/53), done.
+remote: Compressing objects: 100% (38/38), done.
+
+Receiving objects: 100% (631/631), 7.06 MiB | 32.00 KiB/s, done.
+Resolving deltas: 100% (333/333), done.
+</code></pre>
+
+<h1 id="写一篇博客">写一篇博客</h1>
+
+<p>使用在博客目录下使用hugo new post/firstarticle.md在post文件夹下创建md一篇文件，使用visual studio code编写博客</p>
+
+<pre><code>C:\Users\刘晟\test&gt;hugo new post/an.md
+C:\Users\刘晟\test\content\post\an.md created
+</code></pre>
+
+<p>编辑完记得保存</p>
+
+<h1 id="启动博客">启动博客</h1>
+
+<p>下载好主题后可以尝试启动博客<code>hugo server -t hugo-theme-cleanwhite --buildDrafts</code>其中hugo-theme-cleanwhite为相应的主题名</p>
+
+<pre><code>C:\Users\刘晟\test&gt;hugo server -t hugo-theme-cleanwhite --buildDrafts
+Building sites … WARN 2019/10/22 15:55:12 Page's .URL is deprecated and will be removed in a future release. Use .Permalink or .RelPermalink. If what you want is the front matter URL value, use .Params.url.
+
+                   | EN
++------------------+----+
+  Pages            |  7
+  Paginator pages  |  0
+  Non-page files   |  0
+  Static files     | 46
+  Processed images |  0
+  Aliases          |  1
+  Sitemaps         |  1
+  Cleaned          |  0
+
+Total in 149 ms
+Watching for changes in C:\Users\刘晟\test\{archetypes,content,data,layouts,static,themes}
+Watching for config changes in C:\Users\刘晟\test\config.toml
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+
+<p>此时在浏览器中输入<a href="http://localhost:1313/即可查看博客效果">http://localhost:1313/即可查看博客效果</a>
+<img src="/static/picture/../img/picture/Snipaste_2019-10-22_15-57-34.png" alt="" />
+并看到刚刚编号的第一篇博文</p>
+
+<h1 id="博客发布-通过github">博客发布&ndash;通过github</h1>
+
+<h2 id="申请respository">申请respository</h2>
+
+<p>首先在自己的github账号中申请一个repository名字要和自己的账号名保持一致加上 .github.io
+<img src="static/../../../static/img/picture/Snipaste_2019-10-22_16-12-50.png" alt="" /></p>
+
+<h2 id="为本地博客绑定链接">为本地博客绑定链接</h2>
+
+<p>hugo &ndash;theme=hugo-theme-cleanwhite &ndash;baseUrl=&ldquo;<a href="https://liusheng996.github.io&quot;">https://liusheng996.github.io&quot;</a> &ndash;buildDrafts<br />
+博客文件夹会出现一个public文件为将来要发布的文件</p>
+
+<h2 id="public文件传到本地git仓库中">public文件传到本地git仓库中</h2>
+
+<p><strong>git init</strong><br />
+命令行在public目录下输入git init将public变成Git可以管理的仓库  命令行输入完成瞬间git就把仓库建好了 public目录下会有.git目录出现这个目录是Git来跟踪管理的版本库，一般不要乱动.git目录 以免Git库被破坏<br />
+<strong>git add</strong><br />
+将文件添加到仓库 git add .表示将public中的文件全部加入到仓库中
+<strong>git commit</strong>
+将文件添加到仓库  git commit -m &ldquo;提交说明&rdquo;</p>
+
+<h2 id="要把本地git库和远程github进行关联">要把本地git库和远程github进行关联</h2>
+
+<p>git remote add origin <a href="http://github.con/liusheng996/liusheng996.github.io.git">http://github.con/liusheng996/liusheng996.github.io.git</a></p>
+
+<h2 id="将文件push到github库中">将文件push到github库中</h2>
+
+<p>git push -u origin master</p>
+
+<h2 id="完成">完成</h2>
+
+<p>访问<a href="http://liusheng996.github.io">http://liusheng996.github.io</a></p>
+
+<h1 id="个人总结">个人总结：</h1>
+
+<p>hugo的主题选择和调整真的是件麻烦事，个人经验刚开始用千万不要使用一些不太成熟的主题 这些主题中没有example site文件 学习调试起来非常懵逼 直接选择官网上比价成熟的项目有利于学习理解</p>
+
+<p>这里推荐bilibili上的hugo调试的教学视频<a href="https://www.bilibili.com/video/av58083222">https://www.bilibili.com/video/av58083222</a></p>
+
+<p>主题的调试是件很麻烦的事，网上相关资料也很缺乏，后期会总结个人经验</p>
 
 
                 
@@ -332,12 +494,6 @@
                         
                         <a href="/tags/little" title="little">
                             little
-                        </a>
-                        
-                        
-                        
-                        <a href="/tags/%E5%8D%9A%E5%AE%A2" title="博客">
-                            博客
                         </a>
                         
                         
