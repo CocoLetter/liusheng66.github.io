@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tech on CodeBaker</title>
-    <link>https://liusheng996.github.io/categories/tech/</link>
-    <description>Recent content in Tech on CodeBaker</description>
+    <title>github on CodeBaker</title>
+    <link>https://liusheng996.github.io/tags/github/</link>
+    <description>Recent content in github on CodeBaker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 22 Oct 2019 12:48:24 +0800</lastBuildDate>
     
-	<atom:link href="https://liusheng996.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://liusheng996.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://liusheng996.github.io/post/newhugo/</guid>
       <description>下载安装hugo 系统环境路径的配置 下载安装git 系统环境路径的配置</description>
-    </item>
-    
-    <item>
-      <title>Hugo 搭建个人博客|精讲</title>
-      <link>https://liusheng996.github.io/post/hugo/</link>
-      <pubDate>Mon, 21 Oct 2019 12:57:21 +0800</pubDate>
-      
-      <guid>https://liusheng996.github.io/post/hugo/</guid>
-      <description>hugu的下载与安装</description>
     </item>
     
   </channel>

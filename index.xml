@@ -6,10 +6,19 @@
     <description>Recent content on CodeBaker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 21 Oct 2019 13:02:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 12:48:24 +0800</lastBuildDate>
     
 	<atom:link href="https://liusheng996.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>用hugo和github部署博客|详细版</title>
+      <link>https://liusheng996.github.io/post/newhugo/</link>
+      <pubDate>Tue, 22 Oct 2019 12:48:24 +0800</pubDate>
+      
+      <guid>https://liusheng996.github.io/post/newhugo/</guid>
+      <description>下载安装hugo 系统环境路径的配置 下载安装git 系统环境路径的配置</description>
+    </item>
     
     <item>
       <title>An Example Post</title>

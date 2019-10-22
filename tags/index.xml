@@ -6,15 +6,24 @@
     <description>Recent content in Tags on CodeBaker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 21 Oct 2019 13:02:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 12:48:24 +0800</lastBuildDate>
     
 	<atom:link href="https://liusheng996.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>github</title>
+      <link>https://liusheng996.github.io/tags/github/</link>
+      <pubDate>Tue, 22 Oct 2019 12:48:24 +0800</pubDate>
+      
+      <guid>https://liusheng996.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>https://liusheng996.github.io/tags/hugo/</link>
-      <pubDate>Mon, 21 Oct 2019 13:02:23 +0800</pubDate>
+      <pubDate>Tue, 22 Oct 2019 12:48:24 +0800</pubDate>
       
       <guid>https://liusheng996.github.io/tags/hugo/</guid>
       <description></description>
