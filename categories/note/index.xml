@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>note on CodeBaker</title>
+    <link>https://liusheng996.github.io/categories/note/</link>
+    <description>Recent content in note on CodeBaker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 21 Oct 2019 13:02:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://liusheng996.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Example Post</title>
+      <link>https://liusheng996.github.io/post/han/</link>
+      <pubDate>Mon, 21 Oct 2019 13:02:23 +0800</pubDate>
+      
+      <guid>https://liusheng996.github.io/post/han/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
